@@ -1,0 +1,144 @@
+/*.rect(@width, @height){
+	width: @width;
+	height: @height;
+}
+.rect(@size){
+	width: @size;
+	height: @size;
+}
+.abs{
+	position:absolute;
+}
+.rel{
+	position:relative;
+}
+.noborder{
+	border:none !important;
+}
+.pos(@x, @y){
+	left:@x;
+	top:@y;
+}*/
+.fix{
+    position: fixed;
+}
+.overflow(@x,@y){
+    overflow-x: @x;
+    overflow-y: @y;
+}
+@basecolor: #fff;
+@themecolor: #f5f5f5;
+/*logo*/
+.logo{
+  font-size: 26px;
+  color: #428bca;
+  padding: 8px;
+    .name{
+        font-family: "Helvetica Neue";
+    }
+}
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+/*
+ * Sidebar
+ */
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+    @media (min-width: 768px){
+    .fix;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0 20px;
+    .overflow(hidden, auto);
+    background-color: @themecolor;
+    border-right: 1px solid #eee;
+    }
+}
+.nav-sidebar{
+    margin: 0 -21px 20px -20px;
+    li {
+        a{
+            padding-left: 20px;
+            padding-right: 20px;
+            &:hover, &:active{
+                background-color: #ebebeb;
+            }
+        }
+    }
+    .active{
+        a{
+            padding: 12px 20px;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            color: @basecolor;
+            background-color: #428bca;
+            &:hover, &:active{
+                background-color: #428bca;
+            }
+        }
+    }
+    .collapsed{
+        .glyphicon-minus::before{
+            content: "\2b";
+        }
+    }
+    .glyphicon{
+        margin-right: 10px;
+        &.glyphicon-minus{
+            float: right;
+        }
+    }
+    .sub-menu-list{
+           li{
+               a{
+                   padding-left: 50px;
+                   padding-right: 50px;
+               }
+           }
+    }
+}
+
+/*
+ * Main content
+ */
+.main {
+  padding-top: 20px;
+  @media(min-width: 768px){
+      padding: 0 40px;
+  }
+  .page-header{
+      padding-top: 0;
+  }
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+    h4{
+        margin-bottom: 0;
+    }
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.footer{
+  color: #7a7676;
+  background: @basecolor;
+  font-size: 12px;
+  padding: 15px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #eff0f4;
+}
