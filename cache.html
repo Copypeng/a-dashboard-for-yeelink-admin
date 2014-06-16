@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>清除缓存 | Yeelink控制中心</title>
+    <link href="./bootstrap3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./dashboard/dashboard.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <div class="logo"><span class="name">Yeelink</span> 控制中心</div>
+                <ul class="nav nav-sidebar">
+                    <li><a href="./index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
+                    </li>
+                    <li><a href="./queue.html"><span class="glyphicon glyphicon-align-justify"></span> 产品队列管理</a>
+                    </li>
+                    <li><a href="./users.html"><span class="glyphicon glyphicon-user"></span>  用户管理</a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#collapse-pay-manage"><span class="glyphicon glyphicon-credit-card"></span>财务管理<span class="glyphicon glyphicon-minus"></span>
+</a>
+                    </li>
+                    <ul id="collapse-pay-manage" class="nav sub-menu-list collapse in">
+                        <li><a href="./photostoage.html">图片空间</a>
+                        </li>
+                        <li><a href="./sms.html">短信余额</a>
+                        </li>
+                        <li><a href="./pay-records.html">充值记录</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a data-toggle="collapse" href="#collapse-menu"><span class="glyphicon glyphicon-th"></span>  网站工具                <span class="glyphicon glyphicon-minus"></span>
+</a>
+                    </li>
+                    <ul id="collapse-menu" class="nav sub-menu-list collapse in">
+                        <li class="active"><a href="./cache.html">清除缓存</a>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 登出</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h3 class="sub-header">清除缓存</h3>
+                <div class="jumbotron" style="text-align:center">
+                    <a class="btn btn-danger" role="button" id="btn-clean">清除缓存</a>
+                </div>
+                <div class="footer">2014 @ 青岛亿联客信息技术有限公司</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap3.0/js/bootstrap.min.js"></script>
+    <script>
+        $('#btn-clean').click(function () {
+
+        })
+    </script>
+</body>
+
+</html>

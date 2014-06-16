@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,26 +16,30 @@
             <div class="col-sm-3 col-md-2 sidebar">
                 <div class="logo"><span class="name">Yeelink</span> 控制中心</div>
                 <ul class="nav nav-sidebar">
-                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a>
+                    <li><a href="./index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
                     </li>
                     <li class="active"><a href="./queue.html"><span class="glyphicon glyphicon-align-justify"></span> 产品队列管理</a>
                     </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-cloud"></span>  咿呀咿呀</a>
-                    </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 哩咕哩咕</a>
-                    </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-time"></span> 可折叠菜单</a>
+                    <li><a href="./users.html"><span class="glyphicon glyphicon-user"></span>  用户管理</a>
                     </li>
                     <li>
-                        <a data-toggle="collapse" href="#collapse-menu"><span class="glyphicon glyphicon-th"></span>  一个可折叠菜单                <span class="glyphicon glyphicon-minus"></span>
+                        <a data-toggle="collapse" href="#collapse-pay-manage"><span class="glyphicon glyphicon-credit-card"></span>财务管理<span class="glyphicon glyphicon-minus"></span>
+</a>
+                    </li>
+                    <ul id="collapse-pay-manage" class="nav sub-menu-list collapse in">
+                        <li><a href="./photostoage.html">图片空间</a>
+                        </li>
+                        <li><a href="./sms.html">短信余额</a>
+                        </li>
+                        <li><a href="./pay-records.html">充值记录</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a data-toggle="collapse" href="#collapse-menu"><span class="glyphicon glyphicon-th"></span>  网站工具                <span class="glyphicon glyphicon-minus"></span>
 </a>
                     </li>
                     <ul id="collapse-menu" class="nav sub-menu-list collapse in">
-                        <li><a href="#">项目一</a>
-                        </li>
-                        <li><a href="#">项目二</a>
-                        </li>
-                        <li><a href="#">项目三</a>
+                        <li><a href="./cache.html">清除缓存</a>
                         </li>
                     </ul>
                 </ul>
@@ -49,7 +54,7 @@
                     <div class="form-inline col-sm-3" style="width:auto;">
                         <select class="form-control">
                             <option>批量通过</option>
-                            <option>批量删除</option>
+                            <option>批量驳回</option>
                             <option>批量……</option>
                         </select>
                         <button type="button" class="btn btn-primary">确定</button>
@@ -90,11 +95,8 @@
                                 <td>dolor</td>
                                 <td>sit</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -107,11 +109,8 @@
                                 <td>consectetur</td>
                                 <td>adipiscing</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -124,11 +123,8 @@
                                 <td>nec</td>
                                 <td>odio</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -141,11 +137,8 @@
                                 <td>Sed</td>
                                 <td>cursus</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -158,11 +151,8 @@
                                 <td>diam</td>
                                 <td>Sed</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -175,11 +165,8 @@
                                 <td>quis</td>
                                 <td>sem</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs disabled">已通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                             <tr>
@@ -192,24 +179,28 @@
                                 <td>elementum</td>
                                 <td>imperdiet</td>
                                 <td>
-                                    <select>
-                                        <option>通过</option>
-                                        <option>删除</option>
-                                        <option>……</option>
-                                    </select>
+                                    <a href="#" type="button" class="btn btn-success btn-xs">通过</a>
+                                    <a href="#" type="button" class="btn btn-danger btn-xs">驳回</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <ul class="pagination pull-right">
-                  <li class="disabled"><a href="#">&laquo;</a></li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li><a href="#">&raquo;</a></li>
+                    <li class="disabled"><a href="#">&laquo;</a>
+                    </li>
+                    <li class="active"><a href="#">1</a>
+                    </li>
+                    <li><a href="#">2</a>
+                    </li>
+                    <li><a href="#">3</a>
+                    </li>
+                    <li><a href="#">4</a>
+                    </li>
+                    <li><a href="#">5</a>
+                    </li>
+                    <li><a href="#">&raquo;</a>
+                    </li>
                 </ul>
                 <div class="footer">2014 @ 青岛亿联客信息技术有限公司</div>
             </div>
@@ -218,9 +209,9 @@
     <script type="text/javascript" src="./jquery/jquery.min.js"></script>
     <script src="./bootstrap3.0/js/bootstrap.min.js"></script>
     <script>
-        $("#check-all").click(function(){
+        $("#check-all").click(function () {
             var checked_status = this.checked;
-            $(".check-box").each(function(){
+            $(".check-box").each(function () {
                 this.checked = checked_status;
             })
         })

@@ -13,22 +13,30 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
         <div class="logo"><span class="name">Yeelink</span> 控制中心</div>
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-star"></span> 巴拉巴拉</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cloud"></span>  咿呀咿呀</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 哩咕哩咕</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-time"></span> 可折叠菜单</a></li>
+        <ul class="nav nav-sidebar">
+            <li class="active"><a href="./index.html"><span class="glyphicon glyphicon-home"></span> 首页</a>
+            </li>
+            <li><a href="./queue.html"><span class="glyphicon glyphicon-align-justify"></span> 产品队列管理</a>
+            </li>
+            <li><a href="./users.html"><span class="glyphicon glyphicon-user"></span>  用户管理</a>
+            </li>
             <li>
-                <a data-toggle="collapse" href="#collapse-menu"><span class="glyphicon glyphicon-th"></span>  一个可折叠菜单                <span class="glyphicon glyphicon-minus"></span>
+                <a data-toggle="collapse" href="#collapse-pay-manage"><span class="glyphicon glyphicon-credit-card"></span>财务管理<span class="glyphicon glyphicon-minus"></span>
+</a>
+            </li>
+            <ul id="collapse-pay-manage" class="nav sub-menu-list collapse in">
+                <li><a href="./photostoage.html">图片空间</a></li>
+                <li><a href="./sms.html">短信余额</a></li>
+                <li><a href="./pay-records.html">充值记录</a></li>
+            </ul>
+            <li>
+                <a data-toggle="collapse" href="#collapse-menu"><span class="glyphicon glyphicon-th"></span>  网站工具                <span class="glyphicon glyphicon-minus"></span>
 </a>
             </li>
             <ul id="collapse-menu" class="nav sub-menu-list collapse in">
-                <li ><a href="#">项目一</a></li>
-                <li ><a href="#">项目二</a></li>
-                <li ><a href="#">项目三</a></li>
+                <li><a href="./cache.html">清除缓存</a></li>
             </ul>
-          </ul>
+        </ul>
           <ul class="nav nav-sidebar">
             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 登出</a></li>
           </ul>
@@ -54,7 +62,7 @@
             </div>
           </div>
 
-          <h2 class="sub-header">Section title</h2>
+          <h3 class="sub-header">Section title</h3>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>

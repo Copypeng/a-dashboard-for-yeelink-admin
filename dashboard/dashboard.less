@@ -1,24 +1,4 @@
-/*.rect(@width, @height){
-	width: @width;
-	height: @height;
-}
-.rect(@size){
-	width: @size;
-	height: @size;
-}
-.abs{
-	position:absolute;
-}
-.rel{
-	position:relative;
-}
-.noborder{
-	border:none !important;
-}
-.pos(@x, @y){
-	left:@x;
-	top:@y;
-}*/
+/*pre-defined*/
 .fix{
     position: fixed;
 }
@@ -28,6 +8,12 @@
 }
 @basecolor: #fff;
 @themecolor: #f5f5f5;
+
+/*general*/
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
 /*logo*/
 .logo{
   font-size: 26px;
@@ -36,10 +22,6 @@
     .name{
         font-family: "Helvetica Neue";
     }
-}
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
 }
 /*
  * Sidebar
@@ -116,7 +98,6 @@
       padding-top: 0;
   }
 }
-
 /*
  * Placeholder dashboard ideas
  */
@@ -138,6 +119,8 @@
         display: block;
     }
 }
+
+/*footer*/
 .footer{
   color: #7a7676;
   clear: both;
@@ -148,4 +131,27 @@
   bottom: 0;
   width: 100%;
   border-top: 1px solid #eff0f4;
+}
+
+
+
+
+/***cache page*/
+.jumbotron{
+    text-align: center;
+    a{
+        margin-top: 40px;
+    }
+}
+
+/***photostoage page*/
+.table-edit{
+    .form-control{
+        width: 24%;
+        padding: 3px 12px;
+        height: 26px;
+    }
+    .form-control.wide{
+        width: 60%;
+    }
 }

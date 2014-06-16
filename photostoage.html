@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>用户管理 | Yeelink控制中心</title>
+    <title>图片空间 | Yeelink控制中心</title>
     <link href="./bootstrap3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./dashboard/dashboard.css">
 </head>
@@ -20,14 +20,14 @@
                     </li>
                     <li><a href="./queue.html"><span class="glyphicon glyphicon-align-justify"></span> 产品队列管理</a>
                     </li>
-                    <li class="active"><a href="./users.html"><span class="glyphicon glyphicon-user"></span>  用户管理</a>
+                    <li><a href="./users.html"><span class="glyphicon glyphicon-user"></span>  用户管理</a>
                     </li>
                     <li>
                         <a data-toggle="collapse" href="#collapse-pay-manage"><span class="glyphicon glyphicon-credit-card"></span>财务管理<span class="glyphicon glyphicon-minus"></span>
 </a>
                     </li>
                     <ul id="collapse-pay-manage" class="nav sub-menu-list collapse in">
-                        <li><a href="./photostoage.html">图片空间</a>
+                        <li class="active"><a href="./photostoage.html">图片空间</a>
                         </li>
                         <li><a href="./sms.html">短信余额</a>
                         </li>
@@ -49,27 +49,19 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h3 class="sub-header">用户管理</h3>
+                <h3 class="sub-header">图片空间</h3>
                 <div class="row tool-bar">
                     <div class="form-inline col-sm-3" style="width:auto;">
                         <select class="form-control">
-                            <option>设为高级用户</option>
-                            <option>设为企业用户</option>
-                            <option>……</option>
+                            <option>批量调整</option>
                         </select>
                         <button type="button" class="btn btn-primary">确定</button>
                     </div>
                     <div class="form-inline pull-right" style="padding-right:15px;">
-                        <select class="form-control">
-                            <option>普通用户</option>
-                            <option>高级用户</option>
-                            <option>企业用户</option>
-                            <option>未激活用户</option>
-                        </select>
-                        <button class="btn btn-primary">筛选</button>
+                        <input type="search" class="form-control" placeholder="搜索……">
                     </div>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive table-edit">
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -79,10 +71,9 @@
                                 </th>
                                 <th>用户登陆名</th>
                                 <th>用户邮箱</th>
-                                <th>短信余量</th>
                                 <th>图片空间</th>
                                 <th>空间有效期</th>
-                                <th>身份操作</th>
+                                <th>操作</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -93,13 +84,10 @@
                                 </td>
                                 <td>Lorem</td>
                                 <td>pengyong@yeelink.net</td>
-                                <td>0</td>
-                                <td>1000 M</td>
-                                <td>2014-7-8</td>
+                                <td><input type="number" class="form-control"></td>
+                                <td><input type="date" class="form-control wide"></td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -111,11 +99,8 @@
                                 <td>amet</td>
                                 <td>0</td>
                                 <td>consectetur</td>
-                                <td>adipiscing</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -127,11 +112,8 @@
                                 <td>Integer</td>
                                 <td>0</td>
                                 <td>nec</td>
-                                <td>odio</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -143,11 +125,8 @@
                                 <td>libero</td>
                                 <td>0</td>
                                 <td>Sed</td>
-                                <td>cursus</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -159,11 +138,8 @@
                                 <td>dapibus</td>
                                 <td>0</td>
                                 <td>diam</td>
-                                <td>Sed</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -174,12 +150,9 @@
                                 <td>1,005</td>
                                 <td>Nulla</td>
                                 <td>0</td>
-                                <td>quis</td>
-                                <td>sem</td>
+                                <td>80</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                             <tr>
@@ -191,11 +164,8 @@
                                 <td>nibh</td>
                                 <td>0</td>
                                 <td>elementum</td>
-                                <td>imperdiet</td>
                                 <td>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs disabled">普通</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">高级</a>
-                                    <a href="#" type="button" class="btn btn-primary btn-xs">企业</a>
+                                    <a href="#" type="button" class="btn btn-primary btn-xs">调整</a>
                                 </td>
                             </tr>
                         </tbody>
